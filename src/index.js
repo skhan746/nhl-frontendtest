@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Chatbot from './pages/Chatbot';
+import Jupyter from './pages/Jupyter';
+
+
 
 import { 
-  BrowserRouter,
+  
   createBrowserRouter,
   RouterProvider,
-  Route, 
+   
 } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -21,6 +24,11 @@ const router = createBrowserRouter([
     element:<Chatbot /> ,
   },
 
+  {
+    path:"jupyter",
+    element:<Jupyter /> ,
+  },
+
   
 ]);
 
@@ -28,7 +36,7 @@ const router = createBrowserRouter([
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 ReactDOM.render(
   <>
-  
+ 
     <RouterProvider router={router} />
   
   </>,

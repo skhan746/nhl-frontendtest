@@ -1,10 +1,12 @@
+//ChatMessage.js
 import React from 'react'
 import { ChatDots, Person } from 'react-bootstrap-icons';
 
 
 function ChatMessage(props) {
     return (
-        <div className={`d-flex ${props.user && 'justify-content-end'}`}>
+        <div className="local-bootstrap">
+             <div className={`d-flex ${props.user && 'justify-content-end'}`}>
             {props.user ? (
                 <span className='message-right'>
                     <span className='message-text'>{props.message}</span>
@@ -17,6 +19,9 @@ function ChatMessage(props) {
                 </span>
             )}
         </div>
+
+        </div>
+       
     );
 }
 

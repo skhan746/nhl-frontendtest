@@ -2,10 +2,10 @@
 
 
 body{
-    margin:0px!important;
-    padding: 0px!important;
-    background-color: #313030!important;
-    font-family: 'Lato', sans-serif!important;
+    margin:0px;
+    padding: 0px;
+    background-color: #313030;
+    font-family: 'Lato', sans-serif;
 }
 
 *{
@@ -13,13 +13,17 @@ body{
 }
 ul{
     list-style: none;
+    cursor:pointer;
+    
 }
 a{
     text-decoration: none;
+    
 }
 button{
     outline: none;
     border: none;
+    
 }
 input{
     outline: none;
@@ -53,61 +57,62 @@ input{
     z-index: -1;
 }
 nav{
-	display: flex!important;
-	justify-content: space-around!important;
-	align-items: center!important;
-	position: fixed!important;
-	left: 0!important;
-	top: 0!important;
-	width:100%!important;
-	z-index: 1!important;
-    background-color: transparent!important;
-    transition: 0.6s ease-in-out!important;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width:100%;
+	z-index: 1;
+    background-color: transparent;
+    transition: 0.6s ease-in-out;
 }
 nav.active{
-	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157)!important;
-	background-color: #000000!important;
+	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
+	background-color: #000000;
 }
 nav ul{
-	display: flex!important;
+	display: flex;
 }
 .active{
-    background-color: #14b8ff!important;
-    color:#ffffff!important;
-	box-shadow: 5px 10px 30px rgba(64, 169, 198, 0.411)!important;
-	transition: all ease 0.2s!important;
+    background-color: #14b8ff;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(64, 169, 198, 0.411);
+	transition: all ease 0.2s;
 }
 .active:hover{
-    background-color: #000000!important;
-    color:#ffffff!important;
-	box-shadow: 5px 10px 30px rgba(64, 158, 198, 0.411)!important;
-	transition: all ease 0.2s!important;
+    background-color: #000000;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(64, 158, 198, 0.411);
+	transition: all ease 0.2s;
 }
 nav ul li a{
-    font-family: 'Lato'!important;
-	height:40px!important;
-	line-height: 43px!important;
-	margin: 3px!important;
-	padding: 0px 22px!important;   /*edited 0px to 20px*/
-	display: flex!important;
-	font-size: 0.9rem!important;
-	text-transform: uppercase!important;
-	font-weight: 500!important;
-	color:#ffffff!important;
-    letter-spacing: 1px!important;
-    border-radius: 3px!important;
-    transition: 0.2s ease-in-out!important;
+    font-family: 'Lato';
+	height:40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;   /*edited 0px to 20px*/
+	display: flex;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#ffffff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+    
 }
 nav ul li a:hover{
-	background-color: #06b5ea!important;
-    color:#ffffff!important;
-	box-shadow: 5px 10px 30px rgba(2, 238, 255, 0.286)!important;
-	transition: all ease 0.2s!important;
+	background-color: #06b5ea;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(2, 238, 255, 0.286);
+	transition: all ease 0.2s;
     
 }
 nav .menu-btn,
 .menu-icon{
-		display:none!important;
+		display:none;
 	}
 .name{
     text-align: center;
@@ -161,6 +166,7 @@ nav .menu-btn,
     transition: all ease 0.5s;
     color: #ffffff;
     border: 2px solid #14fbff;
+    
 }
 
 #features{
@@ -174,6 +180,7 @@ nav .menu-btn,
     justify-content: center;
     padding-top: 40px ;
     background-color: #000000;
+    
 }
 #features h1{
     color: #fff;
@@ -183,6 +190,7 @@ nav .menu-btn,
     display: flex;
     justify-content: center;
     align-content: center;
+    cursor:pointer;
 
 
 }
@@ -223,6 +231,7 @@ nav .menu-btn,
     align-items: center;
     text-align: center;
     flex-direction: column;
+    
 }
 .a-b-text h2{
     color: #fff;
@@ -248,6 +257,8 @@ nav .menu-btn,
 .a-b-text a{
     margin-top:15px ;
 }
+
+
 
 .chatbotbody{
     margin:0px;
@@ -296,14 +307,14 @@ nav .menu-btn,
 .message-right{
     background: #91fbff;
     border-radius: 25px;
-    padding: .5em 1em !important;
+    padding: .5em 1em ;
     margin: 1em;
     
 }
 .message-left{
     background: aliceblue;
     border-radius: 25px;
-    padding: .5em 1em !important;
+    padding: .5em 1em;
     margin: 1em;
 }
 
@@ -320,6 +331,7 @@ nav .menu-btn,
     
 }
 
+
 @media(max-width:620px){
     #contact form{
         width:90%;
@@ -328,7 +340,7 @@ nav .menu-btn,
 
 @media(max-width:1190px){
 	#main{
-		background-size: 1150px !important;
+		background-size: 1150px;
 		
 	}
 	.name{
@@ -426,6 +438,13 @@ nav .menu-btn,
         margin-bottom: 100px;
     }
 }
+.backbut{
+    
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+}
+
 @media(max-width:600px){
 	.name{
 		width:60%;

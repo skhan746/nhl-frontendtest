@@ -1,7 +1,14 @@
+//Navbar.jsx
 import React, {useState} from 'react';
+import { Link as LinkScroll } from 'react-scroll';
 import logo from '../images/k.png';
 
-import{Link} from 'react-router-dom';
+
+
+
+
+
+import{ Link } from 'react-router-dom';
 
 
 
@@ -22,23 +29,44 @@ function Navbar() {
 
     return (
         <nav class="bootstrap-disabled" className={nav ? "nav active" : "nav"}> 
-            <Link to='#' className= 'logo'>
+            <LinkScroll to='main' smooth={true} offset={70} duration={500} className= 'logo'>
                 <img src={logo} alt=''/>
-            </Link>
+            </LinkScroll>
             <input className='menu-btn' type='checkbox' id='menu-btn'/>
             <label className='menu-icon' for='menu-btn'>
                 <span className='nav-icon'></span>
             </label>
             <ul className='menu'>
                 <li><Link to='/chatbot'>Chat with DraftAI-Bot</Link></li>
-                <li><Link to='/tester'>ML Models Used</Link></li>
-                <li><Link to='#'>How it Works</Link></li>
-                <li><Link to='#'>About</Link></li>
+                <li>
+                    <LinkScroll
+                    to='how'
+                    smooth={true}
+                    offset={70}
+                    duration={500}>
+                        How it Works
+                    </LinkScroll>
+                </li>
+                <li>
+                    <LinkScroll
+                    to='mlmodels'
+                    smooth={true}
+                    offset={-90}
+                    duration={500}>
+                        ML Models Used
+                    </LinkScroll>
+                </li>
+                <li>
+                    <LinkScroll
+                    to='members'
+                    smooth={true}
+                    offset={70}
+                    duration={500}>
+                        Team Members
+                    </LinkScroll>
+                </li>
             </ul>
-
-
         </nav>
-  
   )
 }
 
